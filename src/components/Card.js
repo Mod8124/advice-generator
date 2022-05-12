@@ -17,7 +17,7 @@ const Card = ({advice}) => {
                 <div className='divideDesktop'><img src={divideDesktop} className="App-logo" alt="logo" /></div>
               <div className='iconImage'>
                     <div className='icon'>
-                    <img src={next} alt={next, 'simbol for next advice'} onClick={()=> {
+                    <img src={next} alt={next+'simbol for next advice'} onClick={()=> {
                    get()
                    setShow(false)
                }} />

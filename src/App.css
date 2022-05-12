@@ -72,12 +72,15 @@ p {
   padding-bottom: 30px;
 }
 
+.divideMobile img {
+  width: 100%;
+}
+
 .divideDesktop {
   display: none;
 }
 
 .iconImage {
-  background-color: blue;
   width: 100%;
   position: relative;
 }
