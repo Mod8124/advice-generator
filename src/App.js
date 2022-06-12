@@ -1,27 +1,18 @@
 import './App.css';
-import icon from './images/icon-dice.svg';
 import Card from './components/Card'
-import UseFetch from './composables/UseFetch';
-import { useEffect } from 'react';
-
+import AppLogic from './AppLogic';
 
 function App() { 
-  const key = 'https://api.adviceslip.com/advice/71'
-  const {advice,get} = UseFetch(key)
-  
-  useEffect(()=> {
-     get()
-  },[key])
-
+const {advice,handleClick} = AppLogic();
   return (
     <div className="App">
-         {advice &&  <Card advice={advice}></Card>}
+         {advice &&  <Card advice={advice} handleClick={handleClick}></Card>}
          {!advice && <h2>Loading</h2>}
 
-      <div className="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Denis</a>.
-  </div>
+  <footer className="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://mod8124.github.io/portfolio/">Denis</a>.
+  </footer>
     </div>
   );
 }

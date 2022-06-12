@@ -1,8 +1,9 @@
 const { useState } = require("react");
 
-const UseFetch = (url) => {
+const UseFetch = () => {
     const [advice, setAdvices] = useState(null)
-    const get = async () => {
+    
+    const get = async (url = 'https://api.adviceslip.com/advice/71') => {
         try {
             const res = await fetch(url)
 
