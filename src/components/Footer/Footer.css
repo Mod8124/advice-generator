@@ -1,0 +1,28 @@
+:root {
+    /* primary */
+    --cyanColor:hsl(193, 38%, 86%);
+    --neonGreen:hsl(150, 100%, 66%);
+  
+    /* neutral */
+    --grayisBlue:hsl(217, 19%, 25%);
+    --darkGrayishBlue:hsl(217, 19%,15%);
+  
+    /* font-size */
+    --quote:28px;
+  
+  }
+  
+
+a {
+    color:var(--neonGreen);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .attribution {
+    color:var(--cyanColor)
+}
+
+a:hover {
+    font-weight: 800;
+}
+  
